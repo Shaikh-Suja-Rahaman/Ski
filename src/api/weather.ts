@@ -35,12 +35,12 @@ class WeatherAPI {
 
   async getCurrentWeather({ lat, lon }: Coordinates): Promise<WeatherData> {
     const url = this.createURL(`${API_CONFIG.BASE_URL}/weather`, { //calling the create url function
-      lat: lat.toString(),
+      lat: lat.toString(), //this is a string - string
       lon: lon.toString(),
-      units: API_CONFIG.DEFAULT_PARAMS.units,
+      units: API_CONFIG.DEFAULT_PARAMS.units, //this is string - nunmber
     });
 
-    return this.fetchData<WeatherData>(url); //fetching the data using the fetchData function
+    return this.fetchData<WeatherData>(url); //fetching the data using the fetchDatt function
   }
 
   async getForecast({ lat, lon }: Coordinates): Promise<ForecastData> {
