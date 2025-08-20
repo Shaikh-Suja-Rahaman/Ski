@@ -6,6 +6,8 @@ export interface Coordinates {
 
 export interface WeatherCondition { //interfaces's objects must have all these properties inside of it
   //unless i make it optional eg: "email.? string"
+  //having an interface in typescript just helps me on how typescriipt will help me with the data, in the original response
+  // i will still get the info that the original api held, it doesnt filter anything.
   id: number;
   main: string;
   description: string;

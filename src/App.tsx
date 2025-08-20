@@ -6,6 +6,7 @@ import { ThemeProvider } from './context/theme-provider'
 import WeatherDashboard from './pages/weather-dashboard'
 import CityPage from './pages/city-page'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+// import { Link, Navigate } from "react-router-dom"
 import {
   QueryClient,
   QueryClientProvider,
