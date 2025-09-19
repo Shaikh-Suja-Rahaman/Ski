@@ -5,7 +5,7 @@ import type { Coordinates, ForecastData, GeocodingResponse, WeatherData } from "
 //who knew even api calling can be this complex yet proper
 class WeatherAPI {
 
-
+  //defining a class, that i can have objects off of this, and make my app more modular
   //classes in ts
   private createURL(endpoint: string, params: Record<string, string | number>) {
     //so endpoint is a variable of type string, and params is an object (aka record) which can either have string, string key value pair or string, number
@@ -15,7 +15,6 @@ class WeatherAPI {
       ...params, //object
     });
     return `${endpoint}?${searchParams.toString()}`; //toString does the magic
-    //the order doesnt matter, appid could be at the beginning or at the end
   } //this just takes my endpoint url and then adds the parameters like city and units in a fitting way. so that it fits the url
 
 
@@ -30,7 +29,7 @@ class WeatherAPI {
       throw new Error(`Weather API Error: ${response.statusText}`);
     }
 
-    return response.json();
+    return response.json(); //this should be of type weatherData
   }
 
   async getCurrentWeather({ lat, lon }: Coordinates): Promise<WeatherData> {
