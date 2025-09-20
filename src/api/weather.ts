@@ -12,6 +12,9 @@ class WeatherAPI {
     const searchParams = new URLSearchParams({
       //URLSearchParms is like magic, takes an object and makes it url friendly
       appid: API_CONFIG.API_KEY, //my api key
+      //the api key is stored in my .env file, which i obvioously dont want to
+      //push to github :)
+
       ...params, //object
     });
     return `${endpoint}?${searchParams.toString()}`; //toString does the magic
@@ -65,4 +68,5 @@ class WeatherAPI {
   }
 }
 
-export const weatherAPI = new WeatherAPI(); //this obejct is all we need to access our api end points
+export const weatherAPI = new WeatherAPI();
+//this object is all i need to access my api endpoints
