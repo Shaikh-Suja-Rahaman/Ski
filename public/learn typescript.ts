@@ -2,7 +2,7 @@ let num = [1,2,4, "hello"]
 
 // let num2: number[] = [2,2,1, "123"] //throws an error
 let test: [string, number] = ["helloi", 22]
-
+let test2: (string | number | boolean)[] = [true, "", 123 , 12, ""]
 //enums
 enum UserRoles {
   ADMIN = "admin",
@@ -233,7 +233,7 @@ interface Halua <T>{
 function testFunction001(obj: Halua<String> | string){
   // obj.key;
   console.log(123);
-  
+
 }
 
 testFunction001({name: "foo", age: 25, key: "bruh"})

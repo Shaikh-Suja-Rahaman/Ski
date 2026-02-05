@@ -20,9 +20,6 @@ class WeatherAPI {
     return `${endpoint}?${searchParams.toString()}`; //toString does the magic
   } //this just takes my endpoint url and then adds the parameters like city and units in a fitting way. so that it fits the url
 
-
-
-
   private async fetchData<T>(url: string): Promise<T> {
     //<T> is generic TYPE, so i'll declare this during calling this function, its like a placeholder
     // now colon: promise<T> means that this function's return type is a promise and once that promise is resolved, it would return the <T> type which I had entered before, this is just for error rectification and to help typeScript catch errors
@@ -57,7 +54,7 @@ class WeatherAPI {
 
   async reverseGeocode({lat, lon}: Coordinates):Promise<GeocodingResponse[]> {
     const url = this.createURL(
-      `API_CONFIG.GEO/reverse`, {
+      `${API_CONFIG.GEO}/reverse`, {
         lat: lat.toString(),
         lon: lon.toString(),
         limit :  1, //i just need the first object as it returns an array //string -> number
