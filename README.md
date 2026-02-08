@@ -4,10 +4,13 @@ A modern, responsive weather application built with React and TypeScript. Get re
 
 **🔗 Live Demo: [ski-rose.vercel.app](https://ski-rose.vercel.app/)**
 
-![React](https://img.shields.io/badge/React-19-blue?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-7-purple?logo=vite)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-teal?logo=tailwindcss)
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
 ## Features 🌟
 
@@ -224,7 +227,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments 🙏
 
-- RoadSideCoder - Inspired by his work 
+- RoadSideCoder - Inspired by his work
 - [OpenWeather API](https://openweathermap.org/) - Weather data provider
 - [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
 - [TanStack Query](https://tanstack.com/query) - Powerful data fetching
