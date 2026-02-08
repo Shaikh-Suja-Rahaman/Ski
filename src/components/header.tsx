@@ -14,7 +14,7 @@ const Header: FC = () => {
   {/* LEFT: LOGO */}
   <Link to="/" className="flex items-center gap-2 justify-self-start">
     <h1 className="font-famil text-[40px] leading-none font-thin translate-y-[1px]">
-      SKII
+      SKI
     </h1>
     <img
       src="/cloudy-day Dark.png"
