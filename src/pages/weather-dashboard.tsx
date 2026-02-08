@@ -5,6 +5,10 @@ import { useGeolocation } from '@/hooks/use-geolocation';
 import { useForecastQuery, useReverseGeocodeQuery, useWeatherQuery } from '@/hooks/use-weather';
 import { AlertTriangle, Info, MapPin, RefreshCw } from 'lucide-react';
 import { CurrentWeather } from '@/components/current-weather';
+import {HourlyTemperature} from '@/components/hourly-temperature'
+import { WeatherDetails } from '@/components/weather-details';
+import {WeatherForecast} from '@/components/weather-forecast';
+
 import React from 'react'
 
 const WeatherDashboard = () => {
@@ -80,6 +84,9 @@ const WeatherDashboard = () => {
     return <WeatherSkeleton/>
   }
 
+    console.log("this is forecastQuery.data");
+  console.log(forecastQuery.data);
+
   return (
     <div className="space-y-4">
       {/* Show info banner when using default location */}
@@ -120,12 +127,13 @@ const WeatherDashboard = () => {
             data={weatherQuery.data}
             locationName={locationName}
           />
-          {/* <HourlyTemperature data={forecastQuery.data} /> */}
+          <HourlyTemperature data={forecastQuery.data} />
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 items-start">
-          {/* <WeatherDetails data={weatherQuery.data} /> */}
-          {/* <WeatherForecast data={forecastQuery.data} /> */}
+          <WeatherDetails data={weatherQuery.data} />
+          <WeatherForecast data={forecastQuery.data} />
+
         </div>
       </div>
     </div>
