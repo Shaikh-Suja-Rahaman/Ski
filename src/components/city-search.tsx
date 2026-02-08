@@ -15,7 +15,7 @@ import {
   CommandSeparator,
 } from "@/components/ui/command";
 import { Button } from "@/components/ui/button";
-import { useFavorites } from "@/hooks/use-favorite";
+import { useFavorites } from "@/hooks/use-favourites";
 
 export function CitySearch() {
   const [open, setOpen] = useState(false);
